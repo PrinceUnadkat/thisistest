@@ -3,37 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>text-storage</title>
-
-    <style>
-        body {
-            background-color: black;
-        }
-        button{
-            background-color: black;
-            color: white;
-        }
-        #input {
-            width: 100%;
-            min-height: 60px; /* Set a minimum height */
-            overflow-y: auto; /* Show scrollbar if needed */
-            word-wrap: break-word; /* Wrap long words */
-            background-color: black;
-            color: white;
-        }
-        #readTXT{
-            color: white;
-        }
-    </style>
+    <title>GitHub Secrets Demo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <textarea id="input" placeholder="Enter your text"></textarea><br><br>
-
-    <button id="writeBTN">Write</button>
-    <button id="readBTN">Read</button><br><br><br>
-
-    <div style="white-space: pre-wrap;" id="readTXT"></div>
-
-    <script type="module" src="script.js"></script>
+    <h1>GitHub Secrets in Frontend</h1>
+    <button onclick="fetchData()">Fetch Data</button>
+    <p id="output"></p>
+    <script src="config.js"></script>  <!-- API key will be injected here -->
+    <script src="script.js"></script>
 </body>
 </html>
